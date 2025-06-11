@@ -1,0 +1,6 @@
+.venv
+.venv310
+/ch4_training_images/
+frozen_east_text_detection.pb
+version.py
+main.py
