@@ -1,0 +1,153 @@
+[
+  {
+    "true_positives": 1,
+    "false_positives": 2,
+    "false_negatives": 9,
+    "ious": [
+      0.574321499185341
+    ],
+    "text_accuracy": 0,
+    "image": "img_10.jpg",
+    "precision": 0.3333333333333333,
+    "recall": 0.1,
+    "f1": 0.15384615384615383,
+    "fps": 0.1240372689304223
+  },
+  {
+    "true_positives": 0,
+    "false_positives": 0,
+    "false_negatives": 8,
+    "ious": [],
+    "text_accuracy": 0,
+    "image": "img_1.jpg",
+    "precision": 0,
+    "recall": 0.0,
+    "f1": 0,
+    "fps": 0.14865129812015457
+  },
+  {
+    "true_positives": 4,
+    "false_positives": 3,
+    "false_negatives": 18,
+    "ious": [
+      0.8476394849785407,
+      0.847575329566855,
+      0.8526315789473684,
+      0.7692307692307693
+    ],
+    "text_accuracy": 2,
+    "image": "img_2.jpg",
+    "precision": 0.5714285714285714,
+    "recall": 0.18181818181818182,
+    "f1": 0.27586206896551724,
+    "fps": 0.13663214256768502
+  },
+  {
+    "true_positives": 1,
+    "false_positives": 2,
+    "false_negatives": 7,
+    "ious": [
+      0.8136171971148016
+    ],
+    "text_accuracy": 0,
+    "image": "img_3.jpg",
+    "precision": 0.3333333333333333,
+    "recall": 0.125,
+    "f1": 0.18181818181818182,
+    "fps": 0.15705823757182347
+  },
+  {
+    "true_positives": 2,
+    "false_positives": 2,
+    "false_negatives": 24,
+    "ious": [
+      0.5023236908732082,
+      0.7624453644729744
+    ],
+    "text_accuracy": 1,
+    "image": "img_7.jpg",
+    "precision": 0.5,
+    "recall": 0.07692307692307693,
+    "f1": 0.13333333333333336,
+    "fps": 0.13444587727590213
+  },
+  {
+    "true_positives": 2,
+    "false_positives": 1,
+    "false_negatives": 12,
+    "ious": [
+      0.6706542239359095,
+      0.6939203082725593
+    ],
+    "text_accuracy": 0,
+    "image": "img_6.jpg",
+    "precision": 0.6666666666666666,
+    "recall": 0.14285714285714285,
+    "f1": 0.23529411764705882,
+    "fps": 0.1393531479102862
+  },
+  {
+    "true_positives": 3,
+    "false_positives": 0,
+    "false_negatives": 1,
+    "ious": [
+      0.7130546318605695,
+      0.621875,
+      0.6234218512599616
+    ],
+    "text_accuracy": 1,
+    "image": "img_4.jpg",
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.8571428571428571,
+    "fps": 0.13705447494377138
+  },
+  {
+    "true_positives": 5,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "ious": [
+      0.8866417152235647,
+      0.9360907612221087,
+      0.8672094066489667,
+      0.80625,
+      0.8364400584795322
+    ],
+    "text_accuracy": 4,
+    "image": "img_5.jpg",
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "fps": 0.12584177213177014
+  },
+  {
+    "true_positives": 2,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "ious": [
+      0.6478942828973302,
+      0.8273971099098133
+    ],
+    "text_accuracy": 0,
+    "image": "img_8.jpg",
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "fps": 0.13004733268192425
+  },
+  {
+    "true_positives": 2,
+    "false_positives": 0,
+    "false_negatives": 6,
+    "ious": [
+      0.8640812322813854,
+      0.8544959958564694
+    ],
+    "text_accuracy": 1,
+    "image": "img_9.jpg",
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1": 0.4,
+    "fps": 0.14486774143555736
+  }
+]

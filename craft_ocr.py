@@ -1,10 +1,12 @@
 import cv2
-import pytesseract
 import numpy as np
+import os
+from craft_text_detector import Craft
 import craft_text_detector.craft_utils as craft_utils
+import pytesseract
 
-# Konfigurasi Tesseract
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+# Configure paths
+pytesseract.pytesseract.tesseract_cmd = '/usr/local/bin/tesseract'
 
 def safe_adjust(polys, ratio_w, ratio_h, ratio_net=2):
     adjusted = []
@@ -15,49 +17,80 @@ def safe_adjust(polys, ratio_w, ratio_h, ratio_net=2):
 
 craft_utils.adjustResultCoordinates = safe_adjust
 
-from craft_text_detector import Craft
+def ensure_horizontal_rotation(cropped):
+    """Ensure text is horizontal by checking aspect ratio"""
+    h, w = cropped.shape[:2]
+    if h > w:  # If vertical orientation
+        cropped = cv2.rotate(cropped, cv2.ROTATE_90_CLOCKWISE)
+    return cropped
 
-# Muat CRAFT
-craft = Craft(output_dir=None, crop_type="poly", cuda=False)
-
-# Baca gambar
-orig = cv2.imread("ch4_training_images/img_59.jpg")
-
-# Deteksi teks
-prediction = craft.detect_text(orig)
-boxes = prediction["boxes"]
-
-# Lepas model dari memori
-craft.unload_craftnet_model()
-craft.unload_refinenet_model()
-
-boxes_list = []
-for poly in prediction["boxes"]:
-    arr = np.array(poly)       # shape (4,2)
-    xs, ys = arr[:,0], arr[:,1]
-    x1, y1 = xs.min(), ys.min()
-    x2, y2 = xs.max(), ys.max()
-    # Cast ke Python int
-    boxes_list.append((int(x1), int(y1), int(x2), int(y2)))
-
-# OCR per-ROI
-results = []
-for (sX, sY, eX, eY) in boxes_list:
-    roi = orig[sY:eY, sX:eX]
-    gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
-    _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
-    text = pytesseract.image_to_string(thresh, config="--oem 1 --psm 7")
-    results.append(((sX, sY, eX, eY), text.strip()))
-
-# Cetak teks
-for ((sX, sY, eX, eY), text) in results:
-    print(f"Box: {(sX, sY, eX, eY)} -> {text}")
+def rotate_and_crop_horizontal(image, poly):
+    """Rotate and crop text region ensuring horizontal output"""
+    poly_pts = poly.reshape(-1, 2).astype(np.float32)
+    rect = cv2.minAreaRect(poly_pts)
     
-# Tampilkan hasil kotak
-output = orig.copy()
-for ((sX, sY, eX, eY), text) in results:
-    cv2.rectangle(output, (sX, sY), (eX, eY), (0, 255, 0), 2)
-cv2.imshow("CRAFT Detected Regions", output)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+    # Get the angle and size
+    angle = rect[-1]
+    width, height = rect[1]
+    
+    # Adjust angle to make text horizontal
+    if angle < -45:
+        angle = -(90 + angle)
+        width, height = height, width  # Swap dimensions
+    
+    # Get rotation matrix
+    center = rect[0]
+    M = cv2.getRotationMatrix2D(center, angle, 1.0)
+    
+    # Rotate the entire image
+    rotated = cv2.warpAffine(image, M, (image.shape[1], image.shape[0]),
+                            flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
+    
+    # Crop the rotated rectangle
+    cropped = cv2.getRectSubPix(rotated, (int(width), int(height)), center)
+    
+    # Ensure horizontal orientation
+    cropped = ensure_horizontal_rotation(cropped)
+    
+    return cropped
 
+def process_image_to_horizontal_segments(image_path, output_dir):
+    """Process image and save all text segments in horizontal orientation"""
+    os.makedirs(output_dir, exist_ok=True)
+    craft = Craft(output_dir=None, crop_type="poly", cuda=False)
+    
+    orig = cv2.imread(image_path)
+    if orig is None:
+        print(f"Error loading image: {image_path}")
+        return
+    
+    # Detect text regions
+    prediction = craft.detect_text(orig)
+    
+    for i, poly in enumerate(prediction["boxes"]):
+        try:
+            # Get horizontal cropped segment
+            cropped = rotate_and_crop_horizontal(orig, poly)
+            
+            # Apply additional preprocessing
+            gray = cv2.cvtColor(cropped, cv2.COLOR_BGR2GRAY)
+            processed = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
+            
+            # Save the segment
+            segment_path = os.path.join(output_dir, f"segment_{i:03d}.png")
+            cv2.imwrite(segment_path, processed)
+            print(f"Saved horizontal segment {i}")
+            
+        except Exception as e:
+            print(f"Error processing segment {i}: {e}")
+    
+    craft.unload_craftnet_model()
+    craft.unload_refinenet_model()
+
+if __name__ == "__main__":
+    # Configuration
+    input_image = "IMG_0491.JPG"
+    output_dir = "horizontal_segments"
+    
+    # Process image
+    process_image_to_horizontal_segments(input_image, output_dir)

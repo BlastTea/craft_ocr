@@ -1,0 +1,488 @@
+{
+  "01_clear_text": {
+    "total_segments": 1,
+    "raw": [
+      {
+        "segment_id": 0,
+        "image_path": "output_results/01_clear_text/segment_000.png",
+        "text_path": "output_results/01_clear_text/segment_000.txt",
+        "text": "ye A r—"
+      }
+    ]
+  },
+  "02_complex_background": {
+    "total_segments": 6,
+    "raw": [
+      {
+        "segment_id": 0,
+        "image_path": "output_results/02_complex_background/segment_000.png",
+        "text_path": "output_results/02_complex_background/segment_000.txt",
+        "text": "-— —_.\nUF"
+      },
+      {
+        "segment_id": 1,
+        "image_path": "output_results/02_complex_background/segment_001.png",
+        "text_path": "output_results/02_complex_background/segment_001.txt",
+        "text": "”\n."
+      },
+      {
+        "segment_id": 2,
+        "image_path": "output_results/02_complex_background/segment_002.png",
+        "text_path": "output_results/02_complex_background/segment_002.txt",
+        "text": "ae"
+      },
+      {
+        "segment_id": 3,
+        "image_path": "output_results/02_complex_background/segment_003.png",
+        "text_path": "output_results/02_complex_background/segment_003.txt",
+        "text": "—"
+      },
+      {
+        "segment_id": 4,
+        "image_path": "output_results/02_complex_background/segment_004.png",
+        "text_path": "output_results/02_complex_background/segment_004.txt",
+        "text": "wi¢«="
+      },
+      {
+        "segment_id": 5,
+        "image_path": "output_results/02_complex_background/segment_005.png",
+        "text_path": "output_results/02_complex_background/segment_005.txt",
+        "text": ""
+      },
+      {
+        "segment_id": 6,
+        "image_path": "output_results/02_complex_background/segment_006.png",
+        "text_path": "output_results/02_complex_background/segment_006.txt",
+        "text": "oT"
+      }
+    ]
+  },
+  "03_curved_or_slanted_text": {
+    "total_segments": 3,
+    "raw": [
+      {
+        "segment_id": 0,
+        "image_path": "output_results/03_curved_or_slanted_text/segment_000.png",
+        "text_path": "output_results/03_curved_or_slanted_text/segment_000.txt",
+        "text": "geyhote"
+      },
+      {
+        "segment_id": 1,
+        "image_path": "output_results/03_curved_or_slanted_text/segment_001.png",
+        "text_path": "output_results/03_curved_or_slanted_text/segment_001.txt",
+        "text": "{Or"
+      },
+      {
+        "segment_id": 2,
+        "image_path": "output_results/03_curved_or_slanted_text/segment_002.png",
+        "text_path": "output_results/03_curved_or_slanted_text/segment_002.txt",
+        "text": "yext"
+      }
+    ]
+  },
+  "04_rotated_text": {
+    "total_segments": 11,
+    "raw": [
+      {
+        "segment_id": 0,
+        "image_path": "output_results/04_rotated_text/segment_000.png",
+        "text_path": "output_results/04_rotated_text/segment_000.txt",
+        "text": "horizontal +75 degrees"
+      },
+      {
+        "segment_id": 1,
+        "image_path": "output_results/04_rotated_text/segment_001.png",
+        "text_path": "output_results/04_rotated_text/segment_001.txt",
+        "text": "horizontal +60 degrees"
+      },
+      {
+        "segment_id": 2,
+        "image_path": "output_results/04_rotated_text/segment_002.png",
+        "text_path": "output_results/04_rotated_text/segment_002.txt",
+        "text": "horizontal +45 degrees"
+      },
+      {
+        "segment_id": 3,
+        "image_path": "output_results/04_rotated_text/segment_003.png",
+        "text_path": "output_results/04_rotated_text/segment_003.txt",
+        "text": "horizontal +30 degrees"
+      },
+      {
+        "segment_id": 4,
+        "image_path": "output_results/04_rotated_text/segment_004.png",
+        "text_path": "output_results/04_rotated_text/segment_004.txt",
+        "text": "(fCAl May easily"
+      },
+      {
+        "segment_id": 5,
+        "image_path": "output_results/04_rotated_text/segment_005.png",
+        "text_path": "output_results/04_rotated_text/segment_005.txt",
+        "text": "Cite TO"
+      },
+      {
+        "segment_id": 6,
+        "image_path": "output_results/04_rotated_text/segment_006.png",
+        "text_path": "output_results/04_rotated_text/segment_006.txt",
+        "text": "vertica"
+      },
+      {
+        "segment_id": 7,
+        "image_path": "output_results/04_rotated_text/segment_007.png",
+        "text_path": "output_results/04_rotated_text/segment_007.txt",
+        "text": "horizontal +15 degrees"
+      },
+      {
+        "segment_id": 8,
+        "image_path": "output_results/04_rotated_text/segment_008.png",
+        "text_path": "output_results/04_rotated_text/segment_008.txt",
+        "text": "different"
+      },
+      {
+        "segment_id": 9,
+        "image_path": "output_results/04_rotated_text/segment_009.png",
+        "text_path": "output_results/04_rotated_text/segment_009.txt",
+        "text": "Angle)"
+      },
+      {
+        "segment_id": 10,
+        "image_path": "output_results/04_rotated_text/segment_010.png",
+        "text_path": "output_results/04_rotated_text/segment_010.txt",
+        "text": "horizontal"
+      }
+    ]
+  },
+  "05_small_text": {
+    "total_segments": 11,
+    "raw": [
+      {
+        "segment_id": 0,
+        "image_path": "output_results/05_small_text/segment_000.png",
+        "text_path": "output_results/05_small_text/segment_000.txt",
+        "text": "The currant font size 1s: Gpt"
+      },
+      {
+        "segment_id": 1,
+        "image_path": "output_results/05_small_text/segment_001.png",
+        "text_path": "output_results/05_small_text/segment_001.txt",
+        "text": "Font Villl"
+      },
+      {
+        "segment_id": 2,
+        "image_path": "output_results/05_small_text/segment_002.png",
+        "text_path": "output_results/05_small_text/segment_002.txt",
+        "text": "The current font size is: Spt"
+      },
+      {
+        "segment_id": 3,
+        "image_path": "output_results/05_small_text/segment_003.png",
+        "text_path": "output_results/05_small_text/segment_003.txt",
+        "text": "The current font size is: Spt"
+      },
+      {
+        "segment_id": 4,
+        "image_path": "output_results/05_small_text/segment_004.png",
+        "text_path": "output_results/05_small_text/segment_004.txt",
+        "text": "The current font size is: 10pt"
+      },
+      {
+        "segment_id": 5,
+        "image_path": "output_results/05_small_text/segment_005.png",
+        "text_path": "output_results/05_small_text/segment_005.txt",
+        "text": "The current font size is: 10.95pt"
+      },
+      {
+        "segment_id": 6,
+        "image_path": "output_results/05_small_text/segment_006.png",
+        "text_path": "output_results/05_small_text/segment_006.txt",
+        "text": "The current font size is: 12pt"
+      },
+      {
+        "segment_id": 7,
+        "image_path": "output_results/05_small_text/segment_007.png",
+        "text_path": "output_results/05_small_text/segment_007.txt",
+        "text": "The current font size is: 14.4pt"
+      },
+      {
+        "segment_id": 8,
+        "image_path": "output_results/05_small_text/segment_008.png",
+        "text_path": "output_results/05_small_text/segment_008.txt",
+        "text": "The current font size is: 17.28pt"
+      },
+      {
+        "segment_id": 9,
+        "image_path": "output_results/05_small_text/segment_009.png",
+        "text_path": "output_results/05_small_text/segment_009.txt",
+        "text": "The current font size is: 20.74pt"
+      },
+      {
+        "segment_id": 10,
+        "image_path": "output_results/05_small_text/segment_010.png",
+        "text_path": "output_results/05_small_text/segment_010.txt",
+        "text": "The current font size is: 24.88pt"
+      }
+    ]
+  },
+  "06_low_light_or_high_contrast": {
+    "total_segments": 10,
+    "raw": [
+      {
+        "segment_id": 0,
+        "image_path": "output_results/06_low_light_or_high_contrast/segment_000.png",
+        "text_path": "output_results/06_low_light_or_high_contrast/segment_000.txt",
+        "text": "Scan everything"
+      },
+      {
+        "segment_id": 1,
+        "image_path": "output_results/06_low_light_or_high_contrast/segment_001.png",
+        "text_path": "output_results/06_low_light_or_high_contrast/segment_001.txt",
+        "text": "Documents, Receipts,"
+      },
+      {
+        "segment_id": 2,
+        "image_path": "output_results/06_low_light_or_high_contrast/segment_002.png",
+        "text_path": "output_results/06_low_light_or_high_contrast/segment_002.txt",
+        "text": ""
+      },
+      {
+        "segment_id": 3,
+        "image_path": "output_results/06_low_light_or_high_contrast/segment_003.png",
+        "text_path": "output_results/06_low_light_or_high_contrast/segment_003.txt",
+        "text": "Sketchbooks, Whiteboards"
+      },
+      {
+        "segment_id": 4,
+        "image_path": "output_results/06_low_light_or_high_contrast/segment_004.png",
+        "text_path": "output_results/06_low_light_or_high_contrast/segment_004.txt",
+        "text": "BAS WHAQe"
+      },
+      {
+        "segment_id": 5,
+        "image_path": "output_results/06_low_light_or_high_contrast/segment_005.png",
+        "text_path": "output_results/06_low_light_or_high_contrast/segment_005.txt",
+        "text": "ail"
+      },
+      {
+        "segment_id": 6,
+        "image_path": "output_results/06_low_light_or_high_contrast/segment_006.png",
+        "text_path": "output_results/06_low_light_or_high_contrast/segment_006.txt",
+        "text": "MS &"
+      },
+      {
+        "segment_id": 7,
+        "image_path": "output_results/06_low_light_or_high_contrast/segment_007.png",
+        "text_path": "output_results/06_low_light_or_high_contrast/segment_007.txt",
+        "text": "Simple,"
+      },
+      {
+        "segment_id": 8,
+        "image_path": "output_results/06_low_light_or_high_contrast/segment_008.png",
+        "text_path": "output_results/06_low_light_or_high_contrast/segment_008.txt",
+        "text": "Accurate,"
+      },
+      {
+        "segment_id": 9,
+        "image_path": "output_results/06_low_light_or_high_contrast/segment_009.png",
+        "text_path": "output_results/06_low_light_or_high_contrast/segment_009.txt",
+        "text": "wre"
+      },
+      {
+        "segment_id": 10,
+        "image_path": "output_results/06_low_light_or_high_contrast/segment_010.png",
+        "text_path": "output_results/06_low_light_or_high_contrast/segment_010.txt",
+        "text": "Fast Scanning"
+      }
+    ]
+  },
+  "07_multilanguage_or_symbols": {
+    "total_segments": 23,
+    "raw": [
+      {
+        "segment_id": 0,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_000.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_000.txt",
+        "text": "Indaon—|"
+      },
+      {
+        "segment_id": 1,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_001.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_001.txt",
+        "text": "English utterance"
+      },
+      {
+        "segment_id": 2,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_002.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_002.txt",
+        "text": "utterance"
+      },
+      {
+        "segment_id": 3,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_003.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_003.txt",
+        "text": "“! would like to have"
+      },
+      {
+        "segment_id": 4,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_004.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_004.txt",
+        "text": "my"
+      },
+      {
+        "segment_id": 5,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_005.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_005.txt",
+        "text": "Saya mau foto"
+      },
+      {
+        "segment_id": 6,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_006.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_006.txt",
+        "text": "Picture taken"
+      },
+      {
+        "segment_id": 7,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_007.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_007.txt",
+        "text": "(Saya"
+      },
+      {
+        "segment_id": 8,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_008.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_008.txt",
+        "text": "ingin"
+      },
+      {
+        "segment_id": 9,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_009.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_009.txt",
+        "text": "gambar saya diambil)"
+      },
+      {
+        "segment_id": 10,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_010.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_010.txt",
+        "text": "Saya mau cucl"
+      },
+      {
+        "segment_id": 11,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_011.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_011.txt",
+        "text": "“Tt would like to have my car"
+      },
+      {
+        "segment_id": 12,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_012.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_012.txt",
+        "text": "mobil"
+      },
+      {
+        "segment_id": 13,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_013.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_013.txt",
+        "text": "washed”"
+      },
+      {
+        "segment_id": 14,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_014.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_014.txt",
+        "text": "(Saya ingin mobil"
+      },
+      {
+        "segment_id": 15,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_015.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_015.txt",
+        "text": "Saya dicuci)"
+      },
+      {
+        "segment_id": 16,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_016.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_016.txt",
+        "text": "Saya mau potong"
+      },
+      {
+        "segment_id": 17,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_017.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_017.txt",
+        "text": "eum ici (ike to have my hair"
+      },
+      {
+        "segment_id": 18,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_018.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_018.txt",
+        "text": "rambut"
+      },
+      {
+        "segment_id": 19,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_019.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_019.txt",
+        "text": "Clit"
+      },
+      {
+        "segment_id": 20,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_020.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_020.txt",
+        "text": "(Saya ingin"
+      },
+      {
+        "segment_id": 21,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_021.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_021.txt",
+        "text": "rambut Saya"
+      },
+      {
+        "segment_id": 22,
+        "image_path": "output_results/07_multilanguage_or_symbols/segment_022.png",
+        "text_path": "output_results/07_multilanguage_or_symbols/segment_022.txt",
+        "text": "— tong"
+      }
+    ]
+  },
+  "08_handwritten_or_stylized": {
+    "total_segments": 2,
+    "raw": [
+      {
+        "segment_id": 0,
+        "image_path": "output_results/08_handwritten_or_stylized/segment_000.png",
+        "text_path": "output_results/08_handwritten_or_stylized/segment_000.txt",
+        "text": "mt OFA Dt"
+      },
+      {
+        "segment_id": 1,
+        "image_path": "output_results/08_handwritten_or_stylized/segment_001.png",
+        "text_path": "output_results/08_handwritten_or_stylized/segment_001.txt",
+        "text": "HAVDWAITING"
+      }
+    ]
+  },
+  "09_textured_background": {
+    "total_segments": 1,
+    "raw": [
+      {
+        "segment_id": 0,
+        "image_path": "output_results/09_textured_background/segment_000.png",
+        "text_path": "output_results/09_textured_background/segment_000.txt",
+        "text": ""
+      },
+      {
+        "segment_id": 1,
+        "image_path": "output_results/09_textured_background/segment_001.png",
+        "text_path": "output_results/09_textured_background/segment_001.txt",
+        "text": "mes 1S subtext"
+      }
+    ]
+  },
+  "10_realworld_camera_noise": {
+    "total_segments": 1,
+    "raw": [
+      {
+        "segment_id": 0,
+        "image_path": "output_results/10_realworld_camera_noise/segment_000.png",
+        "text_path": "output_results/10_realworld_camera_noise/segment_000.txt",
+        "text": "-s fe tae <4 kas"
+      }
+    ]
+  },
+  "11_no_text": {
+    "total_segments": 0,
+    "raw": []
+  }
+}
